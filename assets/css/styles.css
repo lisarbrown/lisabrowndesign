@@ -160,11 +160,15 @@
   }
 
   .pr-14 {
-    padding-right: 14px;
+    @media only screen and (min-width: 768px) {
+      padding-right: 14px;
+    }
   }
 
   .pl-14 {
-    padding-left: 14px;
+    @media only screen and (min-width: 768px) {
+      padding-left: 14px;
+    }
   }
   
   .link {
