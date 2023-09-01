@@ -110,6 +110,14 @@
       font-size: 24px;
     }
   }
+
+  h3 {
+    font-size: 18px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
   
   p, a {
     font-weight: 200;
@@ -123,6 +131,14 @@
 
   .mb-18 {
     margin-bottom: 18px;
+  }
+
+  .mb-30-s {
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
   }
 
   .mb-30 {
@@ -141,6 +157,14 @@
     .mr-14 {
       margin-right: 14px;
     }
+  }
+
+  .pr-14 {
+    padding-right: 14px;
+  }
+
+  .pl-14 {
+    padding-left: 14px;
   }
   
   .link {
@@ -163,6 +187,9 @@
     padding-bottom: 12px;
     background-color: #DFE1E2;
     z-index: 10;
+    position: sticky;
+    top: 0;
+    z-index: 99;
   }
 
   .nav-text {
@@ -231,13 +258,6 @@
     font-weight: 800;
   }
   
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
   /* nav */
 
   .section {
@@ -300,9 +320,7 @@
     }
   }
   /* hero */
-  .hero {
-    padding-top: 120px;
-  }
+
   
   /* about */
   .about-copy {
@@ -497,27 +515,39 @@
   /* Project LP */
 
   /* intro */
+  h1.intro-header {
+    font-size: 36px;
 
-  .hero-project {
-    padding-top: 60px;
-
-    img {
-      display: block;
-      height: auto;
-      max-width: 100%;
+    @media only screen and (min-width: 768px) {
+      font-size: 42px;
     }
+  }
 
-    &--xs {
-      @media only screen and (min-width: 768px) {
-        display: none;
-      }
+  p.intro-company {
+    font-size: 18px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 24px;
     }
+  }
 
-    &--md {
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .project-img--xs {
+    display: block;
+    @media only screen and (min-width: 768px) {
       display: none;
-      @media only screen and (min-width: 768px) {
-        display: block;
-      }
+    }
+  }
+
+  .project-img--md {
+    display: none;
+    @media only screen and (min-width: 768px) {
+      display: block;
     }
   }
 
