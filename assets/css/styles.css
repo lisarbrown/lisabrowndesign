@@ -189,7 +189,7 @@
     overflow: hidden;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: #DFE1E2;
+    backdrop-filter: blur(10px);
     z-index: 10;
     position: sticky;
     top: 0;
@@ -304,6 +304,11 @@
   }
   
   /* hero */
+
+  img.hero--img {
+    border-radius: 20px;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  }
   
   img.logo {
     display: block;
