@@ -236,6 +236,7 @@
 
   @media only screen and (min-width: 768px) {
     .nav {
+      background-color: none;
       backdrop-filter: blur(10px);
     }
   }
