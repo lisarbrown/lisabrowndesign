@@ -227,11 +227,17 @@
     overflow: hidden;
     padding-top: 12px;
     padding-bottom: 12px;
-    backdrop-filter: blur(10px);
     z-index: 10;
     position: sticky;
     top: 0;
     z-index: 99;
+    background-color:#DFE1E2;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .nav {
+      backdrop-filter: blur(10px);
+    }
   }
 
   .nav-text {
